@@ -1,5 +1,9 @@
 # KyroDeck
 
+<p align="center">
+  <img src="./src/assets/kyrodeck-logo.png" alt="KyroDeck logo" width="180" />
+</p>
+
 [![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-6-646CFF?logo=vite&logoColor=white)](https://vite.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)

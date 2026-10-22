@@ -2,9 +2,10 @@ import { useEffect, useMemo, useState } from 'react'
 import {
   Binary, Braces, Check, ChevronDown, Code2, Command, FileCode2, FileDiff, Fingerprint,
   Globe2, Heart, Home, LockKeyhole, Search, Settings, ShieldAlert, Sparkles,
-  Terminal, X,
+  X,
 } from 'lucide-react'
 import ToolPages from './tools'
+import kyrodeckLogo from './assets/kyrodeck-logo.png'
 import { EXAMPLE_SNIPPETS, NAV_ITEMS, normalizeSnippets, parseSnippetImport, readLocal, TOOL_INFO, writeLocal, type Snippet, type ToolId } from './lib'
 
 type PageId = typeof NAV_ITEMS[number]['id']
@@ -96,7 +97,7 @@ function App() {
     <div className="app-shell">
       <aside className="sidebar">
         <button className="brand" onClick={() => navigate('overview')} aria-label="KyroDeck overview">
-          <span className="brand-mark"><Terminal size={18} strokeWidth={2.5} /></span>
+          <span className="brand-mark"><img src={kyrodeckLogo} alt="KyroDeck logo" /></span>
           <span><strong>KyroDeck</strong><small>Build. Inspect. Debug.</small></span>
         </button>
         <div className="nav-label">WORKSPACE</div>
@@ -135,7 +136,9 @@ function App() {
             <button className="top-icon" aria-label="Toggle favorite for current tool" title="Favorite this tool" disabled={!activeTool} onClick={() => activeTool && toggleFavorite(activeTool)}>
               <Heart size={17} fill={activeTool && preferences.favorites.includes(activeTool) ? 'currentColor' : 'none'} />
             </button>
-            <button className="avatar" aria-label="KyroDeck home" title="Go to Overview" onClick={() => navigate('overview')}>K</button>
+            <button className="avatar" aria-label="KyroDeck home" title="Go to Overview" onClick={() => navigate('overview')}>
+              <img src={kyrodeckLogo} alt="KyroDeck logo" />
+            </button>
           </div>
         </header>
 

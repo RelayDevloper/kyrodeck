@@ -67,7 +67,8 @@ button:disabled { cursor: not-allowed; opacity: .48; }
 .app-shell { min-height: 100vh; background: var(--page); color: var(--ink); }
 .sidebar { position: fixed; z-index: 20; inset: 0 auto 0 0; display: flex; flex-direction: column; width: 238px; padding: 24px 15px 16px; background: var(--surface); border-right: 1px solid var(--border); }
 .brand { display: flex; gap: 11px; align-items: center; padding: 0 9px; border: 0; color: var(--ink-strong); background: transparent; text-align: left; }
-.brand-mark { display: grid; place-items: center; width: 36px; height: 36px; flex: 0 0 auto; border-radius: 10px; background: #eaf2ff; color: #3675cc; }
+.brand-mark { display: grid; place-items: center; width: 36px; height: 36px; flex: 0 0 auto; overflow: hidden; border-radius: 10px; background: #eaf2ff; box-shadow: inset 0 0 0 1px rgb(54 117 204 / 10%); }
+.brand-mark img, .avatar img { display: block; width: 100%; height: 100%; object-fit: contain; }
 .brand strong { display: block; font-size: 15px; font-weight: 720; letter-spacing: 0; }
 .brand small { display: block; margin-top: 3px; color: var(--muted); font-size: 10px; letter-spacing: .15px; }
 .nav-label { margin: 39px 10px 10px; color: #98a2ae; font-size: 9px; font-weight: 750; letter-spacing: 1px; }
@@ -103,7 +104,7 @@ kbd { display: flex; align-items: center; gap: 2px; padding: 2px 4px; border: 1p
 .top-icon, .icon-button { display: grid; place-items: center; width: 30px; height: 30px; border: 0; border-radius: 5px; color: var(--muted-strong); background: transparent; }
 .top-icon:hover, .icon-button:hover { color: var(--blue-dark); background: var(--surface-muted); }
 .top-icon:disabled { opacity: .35; }
-.avatar { display: grid; place-items: center; width: 28px; height: 28px; padding: 0; border: 1px solid #d7e5f8; border-radius: 50%; color: #3675cc; background: #eff5ff; font-size: 10px; font-weight: 750; transition: background .15s ease, box-shadow .15s ease; }
+.avatar { display: grid; place-items: center; width: 28px; height: 28px; padding: 0; overflow: hidden; border: 1px solid #d7e5f8; border-radius: 50%; color: #3675cc; background: #eff5ff; transition: background .15s ease, box-shadow .15s ease; }
 .avatar:hover { background: #e4efff; box-shadow: 0 0 0 3px rgb(57 120 212 / 10%); }
 .mobile-nav { display: none; }
 .main-content { width: min(1180px, 100%); margin: 0 auto; padding: 38px 42px 64px; }
