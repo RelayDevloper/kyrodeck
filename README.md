@@ -8,6 +8,7 @@
 [![Vite](https://img.shields.io/badge/Vite-6-646CFF?logo=vite&logoColor=white)](https://vite.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Deploy on Netlify](https://img.shields.io/badge/Deploy-Netlify-00C7B7?logo=netlify&logoColor=white)](https://www.netlify.com/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a89d4737-317d-4885-9340-fc16fb77d5a1/deploy-status)](https://app.netlify.com/projects/kyrodeck/deploys)
 
 **Build. Inspect. Debug.**
 
